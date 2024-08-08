@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Fix header to the top */
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding-top: 80px; /* Add padding to push content below the header */
+    padding-bottom: 100px; /* Add padding to push content above the footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+section {
+    width: 80%; /* Adjust section width */
+    max-width: 800px; /* Maximum width of the section */
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px; /* Add space between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better appearance */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+h2 {
+    margin-top: 0; /* Remove margin from top */
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 10px; /* Space between images */
+}
+
+.screenshot-grid img {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners for images */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed; /* Fix footer to the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
